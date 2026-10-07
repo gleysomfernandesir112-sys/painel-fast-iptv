@@ -5,11 +5,21 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https: wss:; frame-ancestors 'self';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https: wss:;" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Painel de Gestão</title>
-    <script type="module" crossorigin src="./assets/index-DH0vD55h.js"></script>
+    <script>
+      (function() {
+        var p = window.location.pathname;
+        var s = window.location.search || '';
+        if (p && p !== '/' && p !== '/index.html') {
+          var clean = p.replace(/^\/+/, '');
+          window.location.replace('/#/' + clean + s);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-CwJDHqA4.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CIr9J8zv.css">
   </head>
   <body>
